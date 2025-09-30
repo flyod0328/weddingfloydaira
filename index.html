@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Floyd & Aira</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="font-secondary text-white mb-n2">Floyd <span class="text-primary">&</span> Aira</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#story" class="nav-item nav-link">Story</a>
+                <a href="#gallery" class="nav-item nav-link">Gallery</a>
+            </div>
+            <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+                <h1 class="font-secondary text-white mb-n2">Floyd <span class="text-primary">&</span> Aira</h1>
+            </a>
+            <div class="navbar-nav mr-auto py-0">
+                <a href="#family" class="nav-item nav-link">Entourage</a>
+                <a href="#event" class="nav-item nav-link">Event</a>
+                <a href="#rsvp" class="nav-item nav-link">RSVP</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 pb-5" id="home">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img2/Carousel-1.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Floyd & Aira</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">January 8, 2026</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img2/Carousel-2.JPG" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Floyd & Aira</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">January 8, 2026</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev justify-content-start" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                    <span class="carousel-control-prev-icon mt-3"></span>
+                </div>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#header-carousel" data-slide="next">
+                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                    <span class="carousel-control-next-icon mt-3"></span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">About</h6>
+                <h1 class="font-secondary display-4">Groom & Bride</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row m-0 mb-4 mb-md-0 pb-2 pb-md-0">
+                <div class="col-md-6 p-0 text-center text-md-right">
+                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
+                        <h3 class="mb-3">The Groom</h3>
+                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-male text-primary pr-3"></i>Floyd Evan Bestudio</h3>
+                        <p>Floyd enjoys the simple things: good food, good company, and making memories. He’s lucky to have found all of that and more with Aira, and now he’s excited to start this new chapter together.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 p-0" style="min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img2/Floyd.jpg" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col-md-6 p-0" style="min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img2/Aira.jpg" style="object-fit: cover;">
+                </div>
+                <div class="col-md-6 p-0 text-center text-md-left">
+                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
+                        <h3 class="mb-3">The Bride</h3>
+                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-female text-primary pr-3"></i>Aira-Louies Paras</h3>
+                        <p>Aira is all about laughter, love, and cherishing life’s little joys. With Floyd by her side, she’s ready to embrace this next adventure-marriage with a full heart and endless excitement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Story Start -->
+    <div class="container-fluid py-5" id="story">
+        <div class="container pt-5 pb-3">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Story</h6>
+                <h1 class="font-secondary display-4">Our Love Story</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="container timeline position-relative p-0">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img2/Story-1.jpg" alt="" style="height: 300px; width: 300px;">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">First Picture Together</h4>
+                            <p class="text-uppercase mb-2">July 1, 2016</p>
+                            <p class="m-0">This took place during the company’s anniversary event, where Floyd asked Aira to take a photo with him.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">First Date</h4>
+                            <p class="text-uppercase mb-2">August 12, 2016</p>
+                            <p class="m-0">Floyd invited Aira to have dinner with him after work, which became their first dinner date.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="img2/Story-2.JPEG" alt="" style="height: 300px; width: 300px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img2/Story-3.jpg" alt="" style="height: 300px; width: 300px;">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">First Christmas Together</h4>
+                            <p class="text-uppercase mb-2">December 25, 2018</p>
+                            <p class="m-0">Floyd and Aira's first Christmas day as couple.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">Proposal</h4>
+                            <p class="text-uppercase mb-2">January 8, 2025</p>
+                            <p class="m-0">On the morning of their 8th anniversary, Floyd proposed to Aira in Bohol.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="img2/Story-4.jpg" alt="" style="height: 300px; width: 300px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Story End -->
+
+
+    <!-- Gallery Start -->
+    <div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
+        <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Gallery</h6>
+            <h1 class="font-secondary display-4 text-white">Our Photo Gallery</h1>
+            <i class="far fa-heart text-white"></i>
+        </div>
+        <div class="owl-carousel gallery-carousel">
+            <div class="gallery-item">
+                <img class="img-fluid w-100 h-100" src="img2/Gallery-1.jpg" alt="">
+                <a href="img2/Gallery-1.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100 h-100" src="img2/Gallery-2.jpg" alt="">
+                <a href="img2/Gallery-2.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100 h-100" src="img2/Gallery-3.jpg" alt="" style="height: 300px; width: 300px;">
+                <a href="img2/Gallery-3.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img2/Gallery-4.jpg" alt="" style="object-fit: cover;">
+                <a href="img2/Gallery-4.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img2/Gallery-5.jpg" alt="">
+                <a href="img2/Gallery-5.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img2/Gallery-6.jpg" alt="">
+                <a href="img2/Gallery-6.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img2/Gallery-7.jpg" alt="">
+                <a href="img2/Gallery-7.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img2/Gallery-8.jpg" alt="">
+                <a href="img2/Gallery-8.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Gallery End -->
+
+    <!-- Friends & Family Start -->
+    <div class="container-fluid py-5" id="family">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Friends & Family</h6>
+                <h1 class="font-secondary display-4">Family</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
+                        <h5 class="mb-0">ANTONIO BESTUDIO</h5>
+                        <p class="mb-3">Father of the Groom</p>
+                        <h5 class="mb-0">LUIS PARAS</h5>
+                        <p class="mb-3">Father of the Bride</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center text-md-left ml-md-3">
+                        <h5 class="mb-0">MERLE BESTUDIO</h5>
+                        <p class="mb-3">Mother of the Groom</p>
+                        <h5 class="mb-0">AIDA PARAS</h5>
+                        <p class="mb-3">Mother of the Bride</p>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <br />
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-4">Entourage</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
+                        <h1 class="font-secondary mb-4">Groomsmen</h1>
+                        <h5 class="mb-0">NICO BESTUDIO</h5>
+                        <p class="mb-3">Bestman</p>
+                        <h6 class="mb-0">RODNEY DOGUILES</h6>
+                        <p class="mb-3">Groomsmen</p>
+                        <h6 class="mb-0">JAYSON DOGUILES</h6>
+                        <p class="mb-3">Groomsmen</p>
+                        <h6 class="mb-0">LORENCE DOGUILES</h6>
+                        <p class="mb-3">Groomsmen</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center text-md-left ml-md-3">
+                        <h1 class="font-secondary mb-4">Bridesmaid</h1>
+                        <h5 class="mb-0">TRIXIA JOY PARAS</h5>
+                        <p class="mb-3">Maid of Honor</p>
+                        <h6 class="mb-0">SOFIA BERNADETTE PARAS</h6>
+                        <p class="mb-3">Bridesmaid</p>
+                        <h6 class="mb-0">FAMELA MARIE BESTUDIO</h6>
+                        <p class="mb-3">Bridesmaid</p>
+                        <h6 class="mb-0">RUBY ANN SALANDANAN</h6>
+                        <p class="mb-3">Groomsmen</p>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="position-relative text-center">
+                <h6 class="mb-0">SCOTTIE THEOPHILUS FULAY</h6>
+                <p class="mb-3">Ring Bearer</p>
+                <h6 class="mb-0">RICHE AKIO PARAS</h6>
+                <p class="mb-3">Coin Bearer</p>
+                <h6 class="mb-0">MICHAEL BENJAMIN PARAS</h6>
+                <p class="mb-3">Bible Bearer</p>
+                <h6 class="mb-0">RISHE ALEXA PARAS</h6>
+                <p class="mb-3">Flower Girl</p>
+                <h6 class="mb-0">ZEMIRA LOIS PARAS</h6>
+                <p class="mb-3">Flower Girl</p>
+            </div>
+            <br />
+            <br />
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-4">Principal Sponsors</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
+                        <h5 class="mb-3">ANTONIO AUNZO</h5>
+                        <h5 class="mb-3">SATURNINO VICMUDO</h5>
+                        <h5 class="mb-3">ROMEO PARAS</h5>
+                        <h5 class="mb-3">JERRY MERCADO</h5>
+                        <h5 class="mb-3">MICHAEL SALVACION</h5>
+                        <h5 class="mb-3">MOISES DELA ROSA JR.</h5>
+                        <h5 class="mb-3">DARWIN ALMARINES</h5>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center text-md-left ml-md-3">
+                        <h5 class="mb-3">GIGI AUNZO</h5>
+                        <h5 class="mb-3">EDNA VICMUDO</h5>
+                        <h5 class="mb-3">MIRASOL PARAS</h5>
+                        <h5 class="mb-3">ANGELINA OMAGAP</h5>
+                        <h5 class="mb-3">RICHIE SALVACION</h5>
+                        <h5 class="mb-3">CRISTINA DELA ROSA</h5>
+                        <h5 class="mb-3">LEILANI ALMARINES</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Friends & Family End -->
+
+    <!-- Event Start -->
+    <div class="container-fluid py-5" id="event">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Event</h6>
+                <h1 class="font-secondary display-4">Our Wedding Event</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <h5 class="font-weight-normal text-muted mb-3 pb-3">Come celebrate our big day with us! We’re so excited to share the joy and love of our wedding with you.</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 border-right border-primary">
+                    <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
+                        <img class="img-fluid mb-4 w-100 h-100" src="img2/Church.jpg" alt="" style="object-fit: cover;">
+                        <h4 class="mb-3" style="padding-top: 2.5px;">Ceremony</h4>
+                        <h5 class="mb-3">St. John Nepomocene Parish Church</h5>
+                        <p class="mb-2">Mojica, Alfonso Cavite</p>
+                        <p class="mb-0">02:30 PM</p>
+                        <p class="mb-0">
+                            <a class="btn btn-outline-primary mr-1" target="_blank" href="https://www.google.com/maps/place/St.+John+Nepomucene+Parish+Church+-+Alfonso,+Cavite/@14.1373152,120.8553248,20.14z/data=!4m6!3m5!1s0x33bd82d405e4a2c1:0xd33ea4fdc692a8a9!8m2!3d14.1372825!4d120.855291!16s%2Fg%2F1hdz0hmzh?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D"><i class="fa fa-map-marker"></i> &nbsp;Maps</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center text-md-left ml-md-3">
+                        <img class="img-fluid mb-4 w-100 h-100" src="img2/Adrianos.JPG" alt="" style="object-fit: cover;">
+                        <h4 class="mb-3">Reception</h4>
+                        <h5 class="mb-3">Adriano's Events Place and Prayer Garden</h5>
+                        <p class="mb-2">094 TCI Rd, Tagaytay City, 4120 Cavite</p>
+                        <p class="mb-0">05:30 PM</p>
+                        <p class="mb-0">
+                            <a class="btn btn-outline-primary mr-1" target="_blank" href="https://www.google.com/maps/place/Adriano's+Events+Place+and+Prayer+Garden+in+Tagaytay/@14.1249958,120.9476002,18.92z/data=!4m6!3m5!1s0x33bd79629915238b:0x54701afbe5903c81!8m2!3d14.124655!4d120.9470377!16s%2Fg%2F11s85j5wm9?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D"><i class="fa fa-map-marker"></i> &nbsp;Maps</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Event End -->
+
+    <!-- RSVP Start -->
+    <div class="container-fluid py-5" id="rsvp">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">RSVP</h6>
+                <h1 class="font-secondary display-4">Join Our Celebration</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdxGXk_tD_3bihtQkiuds1QMUv5fapYC04x98ioHJAcI-qf5w/viewform?embedded=true" width="740" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </div>
+        <br />
+        <div class="position-relative text-center">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">GUESTS</h6>
+                <h1 class="font-secondary display-4">Attire</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <p class="mb-0">Please be in formal or semi-formal attire.</p>
+            <p class="mb-3">We'd love to see you in these colors.</p>
+            <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+                <div class="mx-2" style="height: 50px; width: 50px; background-color: #000047; border-radius: 50%;"></div>
+                <div class="mx-2" style="height: 50px; width: 50px; background-color: #83927d; border-radius: 50%;"></div>
+                <div class="mx-2" style="height: 50px; width: 50px; background-color: #869eba; border-radius: 50%;"></div>
+                <div class="mx-2" style="height: 50px; width: 50px; background-color: #2f4341; border-radius: 50%;"></div>
+                <div class="mx-2" style="height: 50px; width: 50px; background-color: #a3865c; border-radius: 50%;"></div>
+            </div>
+        </div>
+    </div>
+    <!-- RSVP End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-5" id="contact" style="margin-top: 90px;">
+        <div class="container text-center py-5">
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-3 text-white">Thank You</h1>
+                <i class="far fa-heart text-white"></i>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

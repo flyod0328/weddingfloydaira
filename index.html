@@ -115,6 +115,25 @@
     </div>
     <!-- Video Modal End -->
 
+    <!-- RSVP Modal Start -->
+    <div class="modal fade" id="RSVPModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <div class="row justify-content-center">
+                        <h6 style="color: red; font-size: 12px; text-align: center;">To RSVP, please make sure cookies are enabled and that you’re logged into your Google account.</h6>
+                        <h6 style="color: red; font-size: 12px; text-align: center;">If you have any changes with your response, please contact Floyd.</h6>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdxGXk_tD_3bihtQkiuds1QMUv5fapYC04x98ioHJAcI-qf5w/viewform?embedded=true" width="740" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- RSVP Modal End -->
+
 
     <!-- About Start -->
     <div class="container-fluid py-5" id="about">
@@ -434,16 +453,17 @@
                 <h1 class="font-secondary display-4">Join Our Celebration</h1>
                 <i class="far fa-heart text-dark"></i>
             </div>
-            <div class="row justify-content-center">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdxGXk_tD_3bihtQkiuds1QMUv5fapYC04x98ioHJAcI-qf5w/viewform?embedded=true" width="740" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <div class="text-center">
+                <button type="button" class="btn btn-outline-primary mr-1" data-toggle="modal"
+                     data-target="#RSVPModal">
+                     <i class="fa fa-flag"></i>&nbsp;&nbsp;RESPOND TO RSVP
+                </button>
             </div>
         </div>
         <br />
         <div class="position-relative text-center">
-            <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">GUESTS</h6>
-                <h1 class="font-secondary display-4">Attire</h1>
-                <i class="far fa-heart text-dark"></i>
+            <div class="position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">GUESTS ATTIRE</h6>
             </div>
             <p class="mb-0">Please be in formal or semi-formal attire.</p>
             <p class="mb-3">We'd love to see you in these colors.</p>
@@ -466,6 +486,7 @@
                 <h1 class="font-secondary display-3 text-white">Thank You</h1>
                 <i class="far fa-heart text-white"></i>
             </div>
+            <h3 class="text-white">#FLOYDeverWithAIRA</h3>
         </div>
     </div>
     <!-- Footer End -->
